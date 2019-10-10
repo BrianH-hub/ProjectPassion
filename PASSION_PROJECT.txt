@@ -1,0 +1,50 @@
+git remote add origin https://github.com/BrianH-hub/ProjectPassion.git
+
+
+Notes for self about GITHUB
+git init
+git status
+git remote add origin https://github.com/BrianH-hub/ProjectPassion.git
+git commit -m "first commit"
+git add *.*
+
+
+
+echo "# ProjectPassion" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/BrianH-hub/ProjectPassion.git
+git push -u origin master
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/BrianH-hub/ProjectPassion.git
+git push -u origin master
+
+https://education.github.com/git-cheat-sheet-education.pdf
+
+SETUP & INIT
+Configuring user information, initializing and cloning repositories
+git init
+initialize an existing directory as a Git repository
+git clone [url]
+retrieve an entire repository from a hosted location via URL
+
+
+********STAGE & SNAPSHOT**********
+Working with snapshots and the Git staging area
+git status
+show modified files in working directory, staged for your next commit
+git add [file]
+git commit -m “[descriptive message]”
+commit your staged content as a new commit snapshot
+
+
+TRACKING PATH CHANGES
+Versioning file removes and path changes
+git rm [file]
+delete the file from project and stage the removal for commit
+git mv [existing-path] [new-path]
+change an existing file path and stage the move
+git log --stat -M
+show all commit logs with indication of any paths that moved
