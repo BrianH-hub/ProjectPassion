@@ -5,9 +5,9 @@ Notes for self about GITHUB
 git init
 git status
 git remote add origin https://github.com/BrianH-hub/ProjectPassion.git
-git commit -m "first commit"
 git add *.*
-
+git commit -m "first commit"
+git push -u origin master
 
 
 echo "# ProjectPassion" >> README.md
