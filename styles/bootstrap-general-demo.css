@@ -1,0 +1,185 @@
+@charset "utf-8";
+
+/* Write your styles here to overide
+or add to Bootstrap's styles */
+body {
+    background-color: #818181;
+}
+
+.container {
+    background-color: #fff;
+}
+
+header {
+    color: white;
+    background-color: #043f8b;
+    margin: 0 -15px;
+    padding: 16px 20px;
+}
+
+header h1 {
+    margin-bottom: 0;
+}
+
+main {
+    padding: 20px 0;
+}
+
+article {
+    margin-bottom: 30px;
+}
+
+footer {
+    padding: 30px 0;
+    border-top: 1px dotted #ccc;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+/* Bootstrap Nav Custom styles */
+.pg-bootstrap-nav .navbar-brand a {
+    color: #fff;
+}
+
+.pg-bootstrap-nav .dropdown {
+    min-width: 100px;
+}
+
+@media (min-width: 992px) {
+    .pg-bootstrap-nav .navbar-collapse {
+        flex: 0;
+    }
+}
+
+.pg-bootstrap-nav .tab-content  {
+    padding: 30px 0;
+}
+
+/* Bootstrap Form Styles */
+.basic-form {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+@media (min-width: 620px){
+    .basic-form {
+        border-radius: 8px;
+        border: 1px solid #797979;
+    }
+}
+
+/* Bootstrap Grid Styles */
+.demo-box {
+    margin-bottom: 30px;
+    padding: 20px 0 30px;
+    border-top: 1px dotted #868686;
+    border-bottom: 1px dotted #868686;
+}
+
+.demo-box h3 {
+    line-height: 1;
+    margin-top: 0;
+    margin-bottom: 0.6em;
+}
+
+.pg-bootstrap-grid .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.pg-bootstrap-grid .row:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.pg-bootstrap-grid .col,
+.pg-bootstrap-grid .col-sm,
+.pg-bootstrap-grid .col-md,
+.pg-bootstrap-grid .col-lg,
+.pg-bootstrap-grid .col-xl,
+.pg-bootstrap-grid .col-1,
+.pg-bootstrap-grid .col-2,
+.pg-bootstrap-grid .col-3,
+.pg-bootstrap-grid .col-4,
+.pg-bootstrap-grid .col-5,
+.pg-bootstrap-grid .col-6,
+.pg-bootstrap-grid .col-7,
+.pg-bootstrap-grid .col-8,
+.pg-bootstrap-grid .col-9,
+.pg-bootstrap-grid .col-10,
+.pg-bootstrap-grid .col-11,
+.pg-bootstrap-grid .col-12,
+.pg-bootstrap-grid .col-sm-1,
+.pg-bootstrap-grid .col-sm-2,
+.pg-bootstrap-grid .col-sm-3,
+.pg-bootstrap-grid .col-sm-4,
+.pg-bootstrap-grid .col-sm-5,
+.pg-bootstrap-grid .col-sm-6,
+.pg-bootstrap-grid .col-sm-7,
+.pg-bootstrap-grid .col-sm-8,
+.pg-bootstrap-grid .col-sm-9,
+.pg-bootstrap-grid .col-sm-10,
+.pg-bootstrap-grid .col-sm-11,
+.pg-bootstrap-grid .col-sm-12,
+.pg-bootstrap-grid .col-md-1,
+.pg-bootstrap-grid .col-md-2,
+.pg-bootstrap-grid .col-md-3,
+.pg-bootstrap-grid .col-md-4,
+.pg-bootstrap-grid .col-md-5,
+.pg-bootstrap-grid .col-md-6,
+.pg-bootstrap-grid .col-md-7,
+.pg-bootstrap-grid .col-md-8,
+.pg-bootstrap-grid .col-md-9,
+.pg-bootstrap-grid .col-md-10,
+.pg-bootstrap-grid .col-md-11,
+.pg-bootstrap-grid .col-md-12,
+.pg-bootstrap-grid .col-lg-1,
+.pg-bootstrap-grid .col-lg-2,
+.pg-bootstrap-grid .col-lg-3,
+.pg-bootstrap-grid .col-lg-4,
+.pg-bootstrap-grid .col-lg-5,
+.pg-bootstrap-grid .col-lg-6,
+.pg-bootstrap-grid .col-lg-7,
+.pg-bootstrap-grid .col-lg-8,
+.pg-bootstrap-grid .col-lg-9,
+.pg-bootstrap-grid .col-lg-10,
+.pg-bootstrap-grid .col-lg-11,
+.pg-bootstrap-grid .col-lg-12,
+.pg-bootstrap-grid .col-xl-1,
+.pg-bootstrap-grid .col-xl-2,
+.pg-bootstrap-grid .col-xl-3,
+.pg-bootstrap-grid .col-xl-4,
+.pg-bootstrap-grid .col-xl-5,
+.pg-bootstrap-grid .col-xl-6,
+.pg-bootstrap-grid .col-xl-7,
+.pg-bootstrap-grid .col-xl-8,
+.pg-bootstrap-grid .col-xl-9,
+.pg-bootstrap-grid .col-xl-10,
+.pg-bootstrap-grid .col-xl-11,
+.pg-bootstrap-grid .col-xl-12,
+.pg-bootstrap-grid .col-sm-auto,
+.pg-bootstrap-grid .col-md-auto, 
+.pg-bootstrap-grid .col-lg-auto, 
+.pg-bootstrap-grid .col-xl-auto  {
+    border: 2px solid #0b690b;
+    background-color: #e0fae0;
+}
+
+/* Special Styles for Nested demo */
+.nested .row > div > div > div {
+    border: 2px solid #470b69;
+    background-color: #f8e0fa;
+}
+
+@media (min-width: 620px){
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    header {
+        margin: 0 -30px;
+    }
+
+}
