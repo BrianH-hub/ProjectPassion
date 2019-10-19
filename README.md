@@ -20,8 +20,8 @@ Must Haves<br>
   <li>Filters by type</li>
   <li>Filters by ingredients</li>
   <li></li>  
-  <li></li> 
-  
+  <br>
+  <br>
   
 Nice to Have<br>
   <li>Images</li>
@@ -33,7 +33,8 @@ Nice to Have<br>
   <li>Locations to purchase said Alcohols</li>
   <li>Filter by taste</li>
   <li>Filter by color</li>
-
+<br>
+<br>
 Link To ERD<br>
 As the ERD will most likely continue to be modified a link has been provided instead of a file.<br>
 
