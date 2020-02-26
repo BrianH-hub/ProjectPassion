@@ -1,3 +1,31 @@
-body{
-    background-image: url("//BGphotos/1MainBG.jpg")
+
+body {
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    overflow: scroll;
 }
+
+.banner {
+    padding: 2vh 4vh;
+}
+
+.wrapper {
+    margin: 4vh 4vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* background-color: rgba(146, 182, 199, 0.911); */
+    background-color: rgba(226, 237, 241, 0.89);
+    background-position: center;
+    overflow: scroll;
+    line-height: 2em;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.nav-item{
+    font-size: 2vw;
+    }
