@@ -12,7 +12,11 @@ body {
 main {
     margin: 0vh 4vh;
 }
-
+.company h4{
+    color: grey;
+    /* text-align: right; */
+    text-indent: 1em;
+}
 .company h5{
     color: grey;
     /* text-align: right; */
@@ -22,4 +26,12 @@ main {
     font-size: medium;
     /* color: blue;
     border: solid chartreuse 2px; */
+}
+
+.company{
+    margin: 3em;
+}
+
+.logo{
+    width: 150px;
 }

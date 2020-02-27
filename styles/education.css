@@ -13,3 +13,21 @@ body {
 main {
     margin: 0vh 4vh;
 }
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 70%;
+  margin: auto;
+}
+
+
+
+p{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.school{
+    font-size: 120px;
+    color: #ffffff; 
+    margin-bottom: 50px;
+}

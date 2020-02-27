@@ -2,12 +2,7 @@ body {
     background-image: url(/photos/cityScraper.jpg);
 }
 
-.contactInfo li {
-    text-decoration: none;
-    list-style: none;
-    font-size: 2vw;
-    margin: 1vw;
-}
+
 
 main {
     margin: 0vh 4vh;
