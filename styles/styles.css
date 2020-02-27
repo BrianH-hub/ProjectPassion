@@ -19,8 +19,8 @@ body {
     /* background-color: rgba(146, 182, 199, 0.911); */
     background-color: rgba(241, 227, 226, 0.89);
     background-position: center;
-    overflow: scroll;
-    height: 900px;
+    /* overflow: scroll; */
+    /* height: 900px; */
     line-height: 2em;
     border: 4px solid rgba(0, 0, 0, 0.1);
     padding: 30px;
