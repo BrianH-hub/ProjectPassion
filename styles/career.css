@@ -2,36 +2,60 @@ body {
     background-image: url(/photos/Career8.jpg);
 }
 
-.contactInfo li {
-    text-decoration: none;
-    list-style: none;
-    font-size: 2vw;
-    margin: 1vw;
-}
-
 main {
-    margin: 0vh 4vh;
+    margin: 0vw 4vw;
+    /* border: chartreuse 2px solid; */
 }
-.company h4{
-    color: grey;
-    /* text-align: right; */
-    text-indent: 1em;
+.skills{
+    /* border: chartreuse 2px solid; */
 }
-.company h5{
-    color: grey;
-    /* text-align: right; */
-    text-indent: 2em;
+.skills h5{
+    /* border: chartreuse 2px solid; */
 }
-.jobdetails{
-    font-size: medium;
-    /* color: blue;
-    border: solid chartreuse 2px; */
+.experiences{
+    /* border: chartreuse 2px solid; */
+}
+.logo{
+    width: 60px;
+    height: 60px;
 }
 
 .company{
-    margin: 3em;
+    margin: 0vw 0vw 1vw 5vw;
+    /* border: chartreuse 2px solid; */
+}
+.position{
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+    text-indent: 1em;
+    margin: 0;
+    padding: 0;
+    /* border: chartreuse 2px solid; */
+}
+.company h4{
+    color: grey;
+    font-size: 16px;
+    text-indent: 2em;
+    margin: 0;
+    padding: 0;
+    /* border: chartreuse 2px solid; */
+}
+.coDetails{
+    text-align: right;
+    border: chartreuse 2px solid;
+}
+.company h5{
+    color: grey;
+    font-size: 15px;
+    text-indent: 3em;
+    text-align: right;
+}
+.jobdetails{
+    font-size: medium;
+    padding-left: 140px;
+    padding-right: 1vw;
 }
 
-.logo{
-    width: 150px;
-}
+
+

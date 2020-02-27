@@ -2,8 +2,19 @@ body {
     background-image: url(/photos/cityScraper.jpg);
 }
 
-
+.subh{
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.2vw;
+    margin: 1vw;
+    /* border: chartreuse 2px solid; */
+}
 
 main {
     margin: 0vh 4vh;
+}
+
+.section{
+    margin: 0vw 5vw;
+    /* border: chartreuse 2px solid; */
 }

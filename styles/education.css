@@ -10,9 +10,6 @@ body {
     margin: 1vw;
 }
 
-main {
-    margin: 0vh 4vh;
-}
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
   width: 70%;

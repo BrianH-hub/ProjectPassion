@@ -7,13 +7,20 @@ body {
     background-size: cover;
     overflow: scroll;
 }
+main {
+    margin: 0vw 5vw;
+}
 
 .banner {
     padding: 2vh 4vh;
 }
-
+.myName{
+    font-size: 3vw;
+    color: black;
+    text-decoration: none;
+}
 .wrapper {
-    margin: 8vh 8vh;
+    margin: 4vw 10vw;
     background-repeat: no-repeat;
     background-attachment: fixed;
     /* background-color: rgba(146, 182, 199, 0.911); */
@@ -34,9 +41,5 @@ body {
     }
 
 
-    .subheading li {
-        text-decoration: none;
-        list-style: none;
-        font-size: 1.2vw;
-        margin: 1vw;
-    }
+
+
