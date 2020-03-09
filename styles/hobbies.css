@@ -1,3 +1,4 @@
+
 body {
     background-image: url(/photos/mtGrass.jpg);
     background-repeat: repeat;
@@ -13,4 +14,18 @@ body {
     list-style: none;
     font-size: 2vw;
     margin: 1vw;
+}
+
+a{
+    font-family: 'Crete Round', serif;
+}
+
+ul{
+    /* border: 2px chartreuse solid; */
+    list-style: none;
+}
+
+iframe{
+    width: 35vw;
+    height: 18vw;
 }
