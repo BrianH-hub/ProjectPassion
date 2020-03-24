@@ -1,5 +1,5 @@
 body {
-    background-image: url("./Photos/greenKB.jpg");
+    background-image: url(./Photos/greenKB.jpg);
     background-repeat: repeat;
     background-attachment: fixed;
     background-color: black;
