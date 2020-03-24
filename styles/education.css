@@ -1,0 +1,30 @@
+body {
+    background-image: url(/photos/library.jpg);
+
+}
+
+.contactInfo li {
+    text-decoration: none;
+    list-style: none;
+    font-size: 2vw;
+    margin: 1vw;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 70%;
+  margin: auto;
+}
+
+
+
+p{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.school{
+    font-size: 120px;
+    color: #ffffff; 
+    margin-bottom: 50px;
+}

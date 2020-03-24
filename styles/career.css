@@ -1,0 +1,63 @@
+body {
+    background-image: url(/photos/Career8.jpg);
+}
+
+main {
+    margin: 0vw 4vw;
+    /* border: chartreuse 2px solid; */
+}
+
+.logo{
+    width: 60px;
+    height: 60px;
+}
+
+.company{
+    margin: 0vw 0vw 1vw 5vw;
+    /* border: chartreuse 2px solid; */
+}
+.position{
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+    text-indent: 1em;
+    margin: 0;
+    padding: 0;
+    /* border: chartreuse 2px solid; */
+}
+.company h4{
+    color: grey;
+    font-size: 16px;
+    text-indent: 2em;
+    margin: 0;
+    padding: 0;
+    /* border: chartreuse 2px solid; */
+}
+.coDetails{
+    text-align: right;
+    /* border: chartreuse 2px solid; */
+}
+.company h5{
+    color: grey;
+    font-size: 15px;
+    text-indent: 3em;
+    text-align: right;
+}
+.jobdetails{
+    font-size: medium;
+    padding-left: 140px;
+    padding-right: 1vw;
+    line-height:120%
+}
+
+ul{
+    line-height:120%
+}
+.sublist{
+    font-size: x-small;
+    
+}
+.testsub{
+    line-height:70%
+}
+

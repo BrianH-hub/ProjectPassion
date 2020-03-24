@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/resumeEdit.css">
+
+    <title>Resume Edit</title>
+</head>
+
+<body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-database.js"></script>
+
+
+
+    <div class="row">
+        <div class="col-6">
+            <h2>Company Form</h2>
+        </div>
+        <div class="col-6">
+
+        </div>
+    </div>
+
+
+    <form id="companyForm">
+        <div class="row">
+            <div class="col-4">
+                <table>
+                    <tr>
+                        <td><input type="text" placeholder="Job Position" id="jobPosition"></td>
+                        <td><input type="text" placeholder="Company" id="companyName"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="yyyy mmm" id="startDate">
+                        </td>
+                        <td><input type="text" placeholder="yyyy mmm" id="endDate"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="Location" id="city"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="">
+                <h4>Company Lookup</h4>
+                <input type="text" id="companySearch" placeholder="Company Lookup">
+            </div>
+        </div>
+
+        <textarea rows="15" cols="80" placeholder="Job Details" id="jobDetails"></textarea>
+        <br>
+        <button class="col-4 btn btn-success" onclick="writeData()">Submit</button>
+        <button class="btn btn-danger" onclick="deleteData()">DELETE</button>
+    </form>
+
+    <br>
+    <table id='innerBody'>
+        <tr>
+            <th>Job Position</th>
+            <th>Company</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>City</th>
+            <th>Job Description</th>
+        </tr>
+        
+
+    </table>
+    <script src="/scripts/resumeEdit.js"></script>
+</body>
+
+</html>

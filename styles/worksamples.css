@@ -1,0 +1,20 @@
+body {
+    background-image: url(/photos/greenKB.jpg);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    overflow: scroll;
+}
+
+.contactInfo li {
+    text-decoration: none;
+    list-style: none;
+    font-size: 2vw;
+    margin: 1vw;
+}
+
+main {
+    margin: 0vh 4vh;
+}
