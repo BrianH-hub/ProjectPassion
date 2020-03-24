@@ -1,6 +1,6 @@
 
 body {
-    background-image: url(/photos/mtGrass.jpg);
+    background-image: url("./Photos/mtGrass.jpg");
     background-repeat: repeat;
     background-attachment: fixed;
     background-color: black;

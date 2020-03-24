@@ -1,6 +1,5 @@
 body {
-    background-image: url(/photos/library.jpg);
-
+    background-image: url("./Photos/library.jpg");
 }
 
 .contactInfo li {

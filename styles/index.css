@@ -1,6 +1,6 @@
-/* body {
-    background-image: url(/photos/cityScraper.jpg);
-} */
+body {
+    background-image: url("./Photos/cityScraper.jpg");
+}
 
 .subh{
     text-decoration: none;
