@@ -31,11 +31,11 @@ main {
     text-indent: 2em;
     margin: 0;
     padding: 0;
-    border: chartreuse 2px solid;
+    /* border: chartreuse 2px solid; */
 }
 .coDetails{
     text-align: right;
-    border: chartreuse 2px solid;
+    /* border: chartreuse 2px solid; */
 }
 .company h5{
     color: grey;

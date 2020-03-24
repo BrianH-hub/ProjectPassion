@@ -15,6 +15,8 @@
 </head>
 
 <body>
+    <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-database.js"></script>
     <div class=wrapper>
         <header>
             <div class="banner">
@@ -114,13 +116,21 @@
                         <li>UNBC</li>
                     </ul>
 
-
                 </div>
+                
                 <div class="experiences col-10">
                     <h3>Experience</h3>
-                    <!-- Think about using db -->
+                    <br>
+                    <div id="dbStart">
+                        
+                        <!-- Think about using db start -->
+                        
+                    </div>
+                    <!-- template end -->
+                    <!-- Think about using db end-->
 
-                    <div class="company">
+
+                    <!-- <div class="company">
                         <div class="d-flex">
                             <img class="logo border border-dark rounded float-left" src="/logos/bcit.png">
                             <div class="description">
@@ -138,208 +148,9 @@
                             esse voluptates aspernatur dolorum dolores iste magnam eligendi illo, numquam, facere quia
                             consectetur veritatis inventore, molestiae reiciendis!
                         </div>
-                    </div>
+                    </div> -->
                     <!-- template end -->
 
-                    <div class="company">
-                        <div class="d-flex">
-                            <img class="logo border border-dark rounded float-left" src="/logos/simplycomp.png">
-                            <div class="description">
-                                <p class="position">Network Administrator</p>
-                                <h4>Simply Computing</h4>
-                            </div>
-                            <div class="coDetails ml-auto">
-                                <h5>Jun 2019 – Aug 2019</h5>
-                                <h5>Vancouver Area</h5>
-                            </div>
-                        </div>
-                        <div class="jobdetails">
-                            IT support for:
-                            <ul>
-                                <li>OS's: Apple, Windows, Linux</li>
-                                <li>Hardware: routers, switches, cabling, laptops, desktops, access points, tablets,
-                                    UPS, servers
-                                    Software</li>
-                                <li>Team management</li>
-                                <li>Conflict resolution</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- template end -->
-                    <div class="company">
-                        <div class="d-flex">
-                            <img class="logo border border-dark rounded float-left" src="/logos/ncix.png">
-                            <div class="description">
-                                <p class="position">Product Manager</p>
-                                <h4>NCIX</h4>
-                            </div>
-                            <div class="coDetails ml-auto">
-                                <h5>Feb 2014 – Apr 2017</h5>
-                                <h5>Richmond Area</h5>
-                            </div>
-                        </div>
-                        <div class="jobdetails">
-                            <p>One of Two US Product Managers mirroring tasks of the 12 NCIX Canada PMs.</p>
-                            <p>Intimately worked with leading Tech Industry manufacturers and distributors</p>
-                            <div class="row">
-
-                                <div class="col-sm-6">
-                                    <ul>
-                                        <li>Asus</li>
-                                        <li>MSI</li>
-                                        <li>Kingston</li>
-                                        <li>Linksys</li>
-                                        <li>Intel</li>
-                                    </ul>
-
-                                </div>
-
-                                <div class="col-sm-6">
-                                    <ul>
-                                        <li>AMD</li>
-                                        <li>Synex</li>
-                                        <li>D&H</li>
-                                        <li>TechData</li>
-                                        <li>Ingram</li>
-                                    </ul>
-
-                                </div>
-                            </div>
-                            <p>
-                                PM tasks at NCIX involved product purchasing, product launch, product marketing, sales
-                                strategics
-                                and execution, acquiring and planning marketing funds, product logistics, product
-                                marketing
-                                materials, product pricing and staying current with industry news and products.
-                            </p>
-                            <p>
-                                In addition to standard PM responsibilities I was also tasked to:
-                                <ul>
-                                    <li>Inventory Audits</li>
-                                    <li>Inventory Logistics</li>
-                                    <li>Back-end development of Company Operating System</li>
-                                    <li>Develop and design the website (final implementations were tightly controled
-                                        owner)</li>
-                                </ul>
-                            </p>
-
-                        </div>
-                    </div>
-                    <!-- template end -->
-
-                    <div class="company">
-                        <div class="d-flex">
-                            <img class="logo border border-dark rounded float-left" src="/logos/JimP.png">
-                            <div class="description">
-                                <p class="position">Intern Accounting Clerk</p>
-                                <h4>Canadian Fishing Company (CANFISOC)</h4>
-                            </div>
-                            <div class="coDetails ml-auto">
-                                <h5>Apr 2012 – Dec 2012</h5>
-                                <h5>Vancouver Area</h5>
-                            </div>
-                        </div>
-                        <div class="jobdetails">
-                            <ul>
-                                <li>Inventoried and calculated Assets of newly acquired companies by CANFISCO</li>
-                                <li>Created an Excel Worksheet with complex formulas with checks and balances for<ul>
-                                        <li>Asset inventory</li>
-                                        <li>Accounting budgeting</li>
-                                    </ul>
-                                </li>
-                                <li>Conducted Accounts Receivable</li>
-                                <li>Conducted Accounts Payable</li>
-                                <li>Conducted Inventory Audits</li>
-                                <li>Conducted Office Administration of department files and historical files</li>
-                            </ul>
-   
-                        </div>
-                    </div>
-                    <!-- template end -->
-                    <div class="company">
-                        <div class="d-flex">
-                            <img class="logo border border-dark rounded float-left" src="/logos/addax.png">
-                            <div class="description">
-                                <p class="position">Store Manager</p>
-                                <h4>Addax</h4>
-                            </div>
-                            <div class="coDetails ml-auto">
-                                <h5>Jan 2010 – July 2011</h5>
-                                <h5>Vancouver Area</h5>
-                            </div>
-                        </div>
-                        <div class="jobdetails">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo deserunt tempora
-                            officia similique
-                            esse voluptates aspernatur dolorum dolores iste magnam eligendi illo, numquam, facere quia
-                            consectetur veritatis inventore, molestiae reiciendis!
-                        </div>
-                    </div>
-                    <!-- template end -->
-                    <div class="company">
-                        <div class="d-flex">
-                            <img class="logo border border-dark rounded float-left" src="/logos/td.jpeg">
-                            <div class="description">
-                                <p class="position">Customer Service Representative</p>
-                                <h4>TD Bank</h4>
-                            </div>
-                            <div class="coDetails ml-auto">
-                                <h5>Sep 2019 – Present 6 mos</h5>
-                                <h5>Vancouver Area</h5>
-                            </div>
-                        </div>
-                        <div class="jobdetails">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo deserunt tempora
-                            officia similique
-                            esse voluptates aspernatur dolorum dolores iste magnam eligendi illo, numquam, facere quia
-                            consectetur veritatis inventore, molestiae reiciendis!
-                        </div>
-                    </div>
-                    <!-- template end -->
-                    <div class="company">
-                        <div class="d-flex">
-                            <img class="logo border border-dark rounded float-left" src="/logos/fortunepalace.jpg">
-                            <div class="description">
-                                <p class="position">Kitchen Co-ordinator, Translator</p>
-                                <h4>Fortune Palace</h4>
-                            </div>
-                            <div class="coDetails ml-auto">
-                                <h5>Sep 2019 – Present 6 mos</h5>
-                                <h5>Vancouver Area</h5>
-                            </div>
-                        </div>
-                        <div class="jobdetails">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo deserunt tempora
-                            officia similique
-                            esse voluptates aspernatur dolorum dolores iste magnam eligendi illo, numquam, facere quia
-                            consectetur veritatis inventore, molestiae reiciendis!
-                        </div>
-                    </div>
-                    <!-- template end -->
-                    <div class="company">
-                        <div class="d-flex">
-                            <img class="logo border border-dark rounded float-left" src="/logos/saveonfoods.jpeg">
-                            <div class="description">
-                                <p class="position">Inventory Maintenance</p>
-                                <h4>Save-On Foods</h4>
-                            </div>
-                            <div class="coDetails ml-auto">
-                                <h5>Sep 2019 – Present 6 mos</h5>
-                                <h5>Vancouver Area</h5>
-                            </div>
-                        </div>
-                        <div class="jobdetails">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo deserunt tempora
-                            officia similique
-                            esse voluptates aspernatur dolorum dolores iste magnam eligendi illo, numquam, facere quia
-                            consectetur veritatis inventore, molestiae reiciendis!
-                        </div>
-                    </div>
-                    <!-- template end -->
-
-
-                    <br>
-                    <br>
                     <br>
                     <br>
                     <br>
@@ -353,7 +164,7 @@
     <footer>
 
     </footer>
-
+    <script src="/scripts/career.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
@@ -363,6 +174,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+
 </body>
 
 

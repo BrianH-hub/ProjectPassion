@@ -17,29 +17,45 @@
     <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-database.js"></script>
 
 
-    <h2>Company Form</h2>
-    <form id="companyForm">
-        <table>
-            <tr>
-                <td><input type="text" placeholder="Job Position" id="jobPosition"></td>
-                <td><input type="text" placeholder="Company" id="companyName"></td>
-            </tr>
-            <tr>
-                <td><input type="text" placeholder="mmm yyyy" id="startDate">
-                </td>
-                <td><input type="text" placeholder="mmm yyyy" id="endDate"></td>
-            </tr>
-            <tr>
-                <td><input type="text" placeholder="Location" id="city"></td>
-            </tr>
-        </table>
 
+    <div class="row">
+        <div class="col-6">
+            <h2>Company Form</h2>
+        </div>
+        <div class="col-6">
+
+        </div>
+    </div>
+
+
+    <form id="companyForm">
+        <div class="row">
+            <div class="col-4">
+                <table>
+                    <tr>
+                        <td><input type="text" placeholder="Job Position" id="jobPosition"></td>
+                        <td><input type="text" placeholder="Company" id="companyName"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="yyyy mmm" id="startDate">
+                        </td>
+                        <td><input type="text" placeholder="yyyy mmm" id="endDate"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="Location" id="city"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="">
+                <h4>Company Lookup</h4>
+                <input type="text" id="companySearch" placeholder="Company Lookup">
+            </div>
+        </div>
 
         <textarea rows="15" cols="80" placeholder="Job Details" id="jobDetails"></textarea>
-<br>
-        <button onclick="writeData()">Submit</button>
-
-
+        <br>
+        <button class="col-4 btn btn-success" onclick="writeData()">Submit</button>
+        <button class="btn btn-danger" onclick="deleteData()">DELETE</button>
     </form>
 
     <br>
@@ -52,9 +68,10 @@
             <th>City</th>
             <th>Job Description</th>
         </tr>
+        
 
     </table>
-    <script src="/scripts/main.js"></script>
+    <script src="/scripts/resumeEdit.js"></script>
 </body>
 
 </html>
