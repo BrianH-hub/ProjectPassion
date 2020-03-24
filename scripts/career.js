@@ -36,7 +36,7 @@ firebase.database().ref('/companies/').orderByChild("startDate").once('value', f
         var jobDetails = childData.jobDetails;
 
         document.getElementById("dbStart").innerHTML =
-            '<div class="company"><div class="d-flex"><img class="logo border border-dark rounded float-left" src="/logos/'+companyName+'.png"><div class="description"><p class="position">' + jobPosition + '</p><h4 class="text-sm-center">' + companyName + '</h4></div><div class="coDetails ml-auto"><h5>' + startDate + ' - ' + endDate + '</h5><h5>' + city + '</h5></div></div><div class="jobdetails">' + jobDetails + '</div></div>'
+            '<div class="company"><div class="d-flex"><img class="logo border border-dark rounded float-left" src="./logos/'+companyName+'.png"><div class="description"><p class="position">' + jobPosition + '</p><h4 class="text-sm-center">' + companyName + '</h4></div><div class="coDetails ml-auto"><h5>' + startDate + ' - ' + endDate + '</h5><h5>' + city + '</h5></div></div><div class="jobdetails">' + jobDetails + '</div></div>'
             document.getElementById("dbStart").innerHTML += beforeBody
     })
 })
