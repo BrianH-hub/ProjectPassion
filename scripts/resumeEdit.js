@@ -134,33 +134,3 @@ function loadCookies() {
     }
     // end reusable
 }
-
-
-// function searchData() {
-
-//     if (companySearch != "") {
-//         firebase.database().ref('/companies/' + companySearch).once('value', function (snapshot) {
-//             var jobPosition = snapshot.val().jobPosition;
-//             var companyName = snapshot.val().companyName;
-//             var startDate = snapshot.val().startDate;
-//             var endDate = snapshot.val().endDate;
-//             var city = snapshot.val().city;
-//             var jobDetails = snapshot.val().jobDetails;
-
-//             document.getElementById("jobPosition").value = jobPosition;
-//             document.getElementById("companyName").value = companyName;
-//             document.getElementById("startDate").value = startDate;
-//             document.getElementById("endDate").value = endDate;
-//             document.getElementById("city").value = city;
-//             document.getElementById("jobDetails").value = jobDetails;
-//         })
-//     } else {
-//         document.getElementById("jobPosition").value = "";
-//         document.getElementById("companyName").value = "";
-//         document.getElementById("startDate").value = "";
-//         document.getElementById("endDate").value = "";
-//         document.getElementById("city").value = "";
-//         document.getElementById("jobDetails").value = "";
-//     }
-
-// }
