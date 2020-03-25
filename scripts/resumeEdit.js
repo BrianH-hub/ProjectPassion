@@ -9,10 +9,12 @@ var firebaseConfig = {
     appId: "1:429041998157:web:0a28f5aaf8d1724140ff04",
     measurementId: "G-VTF0YHT8YM"
 };
-//   // Initialize Firebase
+// Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
 var companiesRef = firebase.database().ref('companies');
+
+
 var companySearch = getInputVal('companySearch');
 
 //submit form
@@ -43,15 +45,19 @@ function getInputVal(id) {
 }
 
 function deleteData() {
-    if(companySearch!=""){
-    firebase.database().ref('/companies/' + companySearch).remove()
-    }else{
+    var companyName = getInputVal('companyName');
+    if (companyName != "") {
+        firebase.database().ref('/companies/' + companyName).remove()
+    } else {
         alert("Company CANNOT be BLANK!!")
     }
 
 }
 
-firebase.database().ref('/companies').orderByChild("startDate").once('value', function (snapshot) {
+
+
+
+firebase.database().ref('/companies/' + companySearch).orderByChild("startDate").once('value', function (snapshot) {
 
     snapshot.forEach(function (childSnapshot) {
         var childData = childSnapshot.val();
@@ -68,35 +74,93 @@ firebase.database().ref('/companies').orderByChild("startDate").once('value', fu
         document.getElementById("innerBody").innerHTML += beforeBody
 
     })
-var beforeBody = document.getElementById("innerBody").innerHTML
+    var beforeBody = document.getElementById("innerBody").innerHTML
     document.getElementById("innerBody").innerHTML =
-            "<tr><th>Job Position</th><th>Company</th><th>Start Date</th><th>End Date</th><th>City</th><th>Job Description</th></tr>"
+        "<tr><th>Job Position</th><th>Company</th><th>Start Date</th><th>End Date</th><th>City</th><th>Job Description</th></tr>"
 
     document.getElementById("innerBody").innerHTML += beforeBody
 })
 
+//cookie Storage
+var myCookies = {};
+function searchData() {
+    myCookies["_companySearch"] = document.getElementById("companySearch").value;
+    //reusable code
+    document.cookie = "";
+    var expiresAtt = new Date(Date.now() + 60 * 1000).toString()
+    var cookieString = "";
+    for (var key in myCookies) {
+        cookieString = key + "=" + myCookies[key] + ";" + expiresAtt + ";";
+        //Save to Cookie
+        document.cookie = cookieString;
+    }
+    //End of reusable cookie code
+    // document.getElementById("out").innerHTML = document.cookie;
+    document.getElementById("out").innerHTML = myCookies["_companySearch"]
 
-if (companySearch != "") {
-    firebase.database().ref('/companies/' + companySearch).once('value', function (snapshot) {
-        var jobPosition = snapshot.val().jobPosition;
-        var companyName = snapshot.val().companyName;
-        var startDate = snapshot.val().startDate;
-        var endDate = snapshot.val().endDate;
-        var city = snapshot.val().city;
-        var jobDetails = snapshot.val().jobDetails;
-
-        document.getElementById("jobPosition").value = jobPosition;
-        document.getElementById("companyName").value = companyName;
-        document.getElementById("startDate").value = startDate;
-        document.getElementById("endDate").value = endDate;
-        document.getElementById("city").value = city;
-        document.getElementById("jobDetails").value = jobDetails;
-    })
-} else {
-    document.getElementById("jobPosition").value = "";
-    document.getElementById("companyName").value = "";
-    document.getElementById("startDate").value = "";
-    document.getElementById("endDate").value = "";
-    document.getElementById("city").value = "";
-    document.getElementById("jobDetails").value = "";
 }
+
+//load cookie
+function loadCookies() {
+    //reusable code
+    myCookie = {};
+    var kv = document.cookie.split(";");
+    for (var id in kv) {
+        var cookie = kv[id].split("=");
+        myCookies[cookie[0].trim()] = cookie[1];
+
+        document.getElementById("out").innerHTML = companySearch;
+        companySearch = myCookies["_companySearch"];
+
+        if (companySearch != "") {
+            document.getElementById("companySearch").value = companySearch
+            firebase.database().ref('/companies/' + companySearch).once('value', function (snapshot) {
+                var jobPosition = snapshot.val().jobPosition;
+                var companyName = snapshot.val().companyName;
+                var startDate = snapshot.val().startDate;
+                var endDate = snapshot.val().endDate;
+                var city = snapshot.val().city;
+                var jobDetails = snapshot.val().jobDetails;
+
+                document.getElementById("jobPosition").value = jobPosition;
+                document.getElementById("companyName").value = companyName;
+                document.getElementById("startDate").value = startDate;
+                document.getElementById("endDate").value = endDate;
+                document.getElementById("city").value = city;
+                document.getElementById("jobDetails").value = jobDetails;
+            })
+        }
+
+    }
+    // end reusable
+}
+
+
+// function searchData() {
+
+//     if (companySearch != "") {
+//         firebase.database().ref('/companies/' + companySearch).once('value', function (snapshot) {
+//             var jobPosition = snapshot.val().jobPosition;
+//             var companyName = snapshot.val().companyName;
+//             var startDate = snapshot.val().startDate;
+//             var endDate = snapshot.val().endDate;
+//             var city = snapshot.val().city;
+//             var jobDetails = snapshot.val().jobDetails;
+
+//             document.getElementById("jobPosition").value = jobPosition;
+//             document.getElementById("companyName").value = companyName;
+//             document.getElementById("startDate").value = startDate;
+//             document.getElementById("endDate").value = endDate;
+//             document.getElementById("city").value = city;
+//             document.getElementById("jobDetails").value = jobDetails;
+//         })
+//     } else {
+//         document.getElementById("jobPosition").value = "";
+//         document.getElementById("companyName").value = "";
+//         document.getElementById("startDate").value = "";
+//         document.getElementById("endDate").value = "";
+//         document.getElementById("city").value = "";
+//         document.getElementById("jobDetails").value = "";
+//     }
+
+// }
