@@ -43,7 +43,12 @@ function getInputVal(id) {
 }
 
 function deleteData() {
+    if(companySearch!=""){
     firebase.database().ref('/companies/' + companySearch).remove()
+    }else{
+        alert("Company CANNOT be BLANK!!")
+    }
+
 }
 
 firebase.database().ref('/companies').orderByChild("startDate").once('value', function (snapshot) {
