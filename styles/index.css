@@ -1,20 +1,21 @@
-/* body {
-    background-image: url(./Photos/cityScraper.jpg);
-} */
-
 .subh{
     text-decoration: none;
     list-style: none;
-    font-size: 1.2vw;
-    margin: 1vw;
-    /* border: chartreuse 2px solid; */
+    /* font-size: 3vh; */
+    margin: 1.3vw;
 }
 
-main {
-    margin: 0vh 4vh;
+.subh li{
+text-decoration: none;
+    list-style: none;
+    font-size: 3.4vh;
+}
+
+ul{
+    line-height:180%
 }
 
 .section{
     margin: 0vw 5vw;
-    /* border: chartreuse 2px solid; */
+    
 }

@@ -2,11 +2,6 @@
     background-image: url(./Photos/Career8.jpg);
 } */
 
-main {
-    margin: 0vw 4vw;
-    /* border: chartreuse 2px solid; */
-}
-
 .logo{
     width: 60px;
     height: 60px;
@@ -45,7 +40,7 @@ main {
 }
 .jobdetails{
     font-size: medium;
-    padding-left: 140px;
+    /* padding-left: 140px; */
     padding-right: 1vw;
     line-height:120%
 }
